@@ -1,5 +1,8 @@
 const express = require("express");
+const cors = require("cors");
 const mongoose = require("mongoose");
+const routes = require("./routes");
+
 
 const app = express();
 const PORT = 3000;
@@ -20,6 +23,8 @@ mongoose
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(cors());
+app.use(routes);
 
 app.get("/", (_, res) => {
   res.json({
