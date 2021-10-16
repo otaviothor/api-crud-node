@@ -1,6 +1,8 @@
 const express = require("express");
 const routes = express.Router();
 
+const App = require("./controllers/AppController");
+
 routes.post("/create", App.create);
 routes.get("/message", App.find);
 routes.get("/message/:id", App.findById);

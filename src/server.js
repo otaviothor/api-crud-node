@@ -3,7 +3,6 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const routes = require("./routes");
 
-
 const app = express();
 const PORT = 3000;
 const MONGODB_URL = "mongodb://127.0.0.1:27017";
