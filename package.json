@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "otavio <otaviosilva2632@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "node src/server.js"
+  },
   "dependencies": {
     "express": "^4.17.1",
     "mongoose": "^6.0.11"
