@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 
 const app = express();
 const PORT = 3000;
-const MONGODB_URL = "";
+const MONGODB_URL = "mongodb://127.0.0.1:27017/crud";
 
 mongoose.Promise = global.Promise;
 mongoose
