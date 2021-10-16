@@ -1,0 +1,7 @@
+{
+  "name": "api-crud-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "otavio <otaviosilva2632@gmail.com>",
+  "license": "MIT"
+}
