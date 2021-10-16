@@ -1,8 +1,8 @@
-const App = require("../models/App");
+const Message = require("../models/Message");
 
 module.exports = {
   async create(req, res) {
-    const message = new App({
+    const message = new Message({
       message: req.body.message,
     });
 
@@ -20,7 +20,7 @@ module.exports = {
   },
 
   async find(_, res) {
-    App.find()
+    Message.find()
       .then((data) => {
         res.send(data);
       })
@@ -34,13 +34,14 @@ module.exports = {
 
   async findById(req, res) {
     const { id } = req.params;
-    App.findById(id)
+    Message.findById(id)
       .then((data) => {
         if (!data) {
           return res.status(404).send({
             message: `Message not found with id ${id}`,
           });
         }
+
         res.send(data);
       })
       .catch((err) => {
@@ -62,7 +63,7 @@ module.exports = {
     const { id } = req.params;
     const { message } = req.body;
 
-    App.findByIdAndUpdate(
+    Message.findByIdAndUpdate(
       id,
       {
         message,
@@ -96,13 +97,14 @@ module.exports = {
   async delete(req, res) {
     const { id } = req.params;
 
-    App.findByIdAndRemove(id)
+    Message.findByIdAndRemove(id)
       .then((data) => {
         if (!data) {
           return res.status(404).send({
             message: "Message not found with id " + id,
           });
         }
+
         res.send({ message: "Message deleted successfully!" });
       })
       .catch((err) => {

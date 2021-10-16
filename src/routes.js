@@ -1,12 +1,12 @@
 const express = require("express");
 const routes = express.Router();
 
-const App = require("./controllers/AppController");
+const Message = require("./controllers/MessageController");
 
-routes.post("/create", App.create);
-routes.get("/message", App.find);
-routes.get("/message/:id", App.findById);
-routes.put("/message/:id", App.update);
-routes.delete("/message/:id", App.delete);
+routes.post("/create", Message.create);
+routes.get("/message", Message.find);
+routes.get("/message/:id", Message.findById);
+routes.put("/message/:id", Message.update);
+routes.delete("/message/:id", Message.delete);
 
 module.exports = routes;
