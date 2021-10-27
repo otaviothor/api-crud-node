@@ -10,7 +10,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O projeto é uma implementação de CRUD (create, read, update e delete) em API com Node.js, Express e MongoDB.
+O projeto é uma implementação de CRUD (create, read, update e delete) em API com Node.js, Express e MongoDB
 
 ## 🚀 Como executar
 
