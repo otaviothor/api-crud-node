@@ -10,7 +10,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O projeto é uma implementação de CRUD (create, read, update e delete) em API com Node.js, Express e MongoDB
+O projeto é uma implementação de CRUD (create, read, update e delete) em API com Node.js, Express e MongoDB.
 
 ## 🚀 Como executar
 
@@ -27,4 +27,4 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ---
 
-Feito por [otávio silva](https://otaviothor.github.io/) 🙃
+Feito por [otávio silva](https://otaviosilva.dev/) 🙃
